@@ -84,6 +84,12 @@ qplot(displ, hwy, data = mpg)
 #alpha (.3) in RGB (colorRamp() and colorRampPalette()) changes opecity & shows us where, specifically, the densest areas of the scatterplot really are
 #smooth and trend lines in ggplot2 qplot(displ, hwy, data = mpg, color = drv, geom = c("point", "smooth"))  indicate the 95% confidence intervals for the lines.
 #qplot(y = hwy, data = mpg, color = drv) specifying the y parameter only, without an x argument, plots the values of the y argument in the order in which they occur in the data
+#STATS are statistical transformations such as binning, quantiles, and smoothing which ggplot2 applies to the data
+#g + geom_point() + geom_smooth(method = "lm") + facet_grid(.~drv) g-data + labs()
+# g + geom_point() + facet_grid(drv~cyl, margins = TRUE) + geom_smooth(method = "lm", se = FALSE, size = 2, color = "black")
+                                                  #+ labs(x = "Displacement", y = "Highway Mileage", title = "Swirl Rules!")
+#plot(myx, myy, type="l", ylim=c(-3,3)) line with limits
+
 #Shiny
 
 #other statistics and analysis
